@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resume Builder</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <div id="form-container" class="form-slide">
-      <h1>Build Your Resume!</h1>
-      <div id="question-container">
-        <p id="question">What is your name?</p>
-        <input type="text" id="user-input" placeholder="Enter here...">
-        <div class="buttons">
-          <button id="next-btn">Next</button>
-          <button id="skip-btn" class="optional">Skip</button>
+    <div class="container">
+        <div id="form-container" class="form-slide">
+            <h1>Build Your Resume</h1>
+            <div id="question-container">
+                <p id="question">What is your name?</p>
+                <input type="text" id="user-input" placeholder="Enter here...">
+                <div class="buttons">
+                    <button id="next-btn">Next</button>
+                    <button id="skip-btn" class="optional">Skip</button>
+                </div>
+            </div>
         </div>
-      </div>
+        <div id="resume-output" class="resume hidden">
+            <h1>Your Resume</h1>
+            <div id="resume-content"></div>
+            <button id="edit-btn">Edit Resume</button>
+        </div>
     </div>
-    <div id="resume-output" class="resume hidden">
-      <h1>Your Resume</h1>
-      <p id="resume-content"></p>
-    </div>
-  </div>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
